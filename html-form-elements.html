@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Katie's HTML Form Elememts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .background {
+        background-image: url("./lined-paper-background.PNG");
+        background-repeat: repeat;
+      }
+      h1 {
+        font-family: Rock Salt;
+        font-size: 50px;
+        text-align: center;
+        color: rgb(6, 37, 83);
+      }
+      h2 {
+        font-family: Rock Salt;
+        font-size: 30px;
+        margin-left: 120px;
+        color: rgb(156, 24, 24);
+        text-decoration: underline;
+      }
+      h3 {
+        font-family: Rock Salt;
+        font-size: 20px;
+        margin-left: 120px;
+        color: rgb(14, 133, 44);
+        text-decoration: underline;
+      }
+      p {
+        margin-left: 120px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        color: rgb(6, 37, 83);
+        font-weight: bold;
+      }
+      .attributes {
+        margin-left: 120px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        color: rgb(6, 37, 83);
+        font-weight: bold;
+      }
+      div {
+        margin-left: 120px;
+        font-family: Martel;
+        font-size: 15px;
+      }
+      form {
+        margin-left: 120px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .button {
+        margin-left: 120px;
+        font-size: 30px;
+        background-color:rgb(70, 117, 187);
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+      }
+      .button:hover{
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body class="background">
+    <h1>-- HTML Form Elements --</h1>
+    <p>The HTML form element represents a document section containing interactive controls for submitting information.</p>
+  </br>
+
+    <!--The Input Element-->
+    <h2>The Input Element</h2>
+    <p>The input element defines a single line input field. It is used to create interactive controls for web-based forms in order to accept data from the user. It is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</p>
+    <form>
+      <label for="firstname">First name:</label></br></br>
+      <input type="text" id="firstname" name="firstname" />
+      <input type="submit" value="Submit" />
+    </form>
+  </br>
+    <h3>The Type Attribute</h3>
+    <p style="color:rgb(70, 117, 187)">The type attribute is the most important attribute and how an input works varies considerably depending on the value of its type attribute. Submit (above) is just one type of input element. The other types of input element are: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, tel, text, time, url and week. </p>
+        <p style="color:rgb(70, 117, 187)">If this attribute is not specified, the default type adopted is text.</p> 
+</br>
+    <h3>Other Attributes</h3>
+    <p style="color:rgb(70, 117, 187)">The input element is so powerful because of its attributes; the type attribute, described with examples above, being the most important. Since every input element, regardless of type, is based on the HTMLInputElement interface, they technically share the exact same set of attributes. However, in reality, most attributes have an effect on only a specific subset of input types. In addition, the way some attributes impact an input depends on the input type, impacting different input types in different ways.</p>
+    <p style="color:rgb(70, 117, 187)">For more information on this click <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">here</a>.</p>
+    <br />
+
+    <!--The Select Element-->
+    <h2>The Select Element</h2>
+    <p>The select element represents a control that provides a menu of options and defines a drop-down list.</p>
+    <form>
+      <label for="icecream">Favourite ice-cream flavour:</label></br></br>
+      <select id="icecream" name="icecream">
+        <option value="chocolate">Chocolate</option>
+        <option value="raspberryripple">Raspberry Ripple</option>
+        <option value="mintchocchip">Mint Choc Chip</option>
+        <option value="cornishclottedcream">Cornish Clotted Cream</option>
+        <option value="lemon">Lemon Sorbet</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+      <p>The select element has some unique attributes you can use to control it (see below).It also accepts most of the general form input attributes.</p>
+  </br>  
+      <h3>The Option Attribute</h3>
+    <p style="color:rgb(70, 117, 187)">The option attribute allows you to pre-select an option...</p>
+    <form>
+      <label for="dinner">Top dinner choice:</label></br></br>
+      <select id="dinner" name="dinner">
+        <option value="broccy-p">Broccy P</option>
+        <option value="risotto">Prawn & Chorizo Risotto</option>
+        <option value="pizza" selected>Homemade Pizza</option>
+        <option value="roastdinner">Roast Chicken</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <h3>The Size Attribute</h3>
+    <p style="color:rgb(70, 117, 187)">
+      The size attribute allows you to specify the number of visible values...
+    </p>
+    <form>
+      <label for="drinks">Best evening beverage:</label><br /><br />
+      <select id="drinks" name="drinks" size="4">
+        <option value="hoppyipa">Hoppy IPA</option>
+        <option value="ginandtonic">Gin & Tonic</option>
+        <option value="devoncider">Devon Cider</option>
+        <option value="whitewine">White Wine</option>
+        <option value="redwine">Red Wine</option>
+        <option value="prosecco">Prosecco</option>
+        <option value="whisky">Whisky</option>
+        <option value="lager">Lager</option> </select
+      ><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <h3>The Multiple Attribute</h3>
+    <p style="color:rgb(70, 117, 187)">
+      The multiple attribute allows the user to select more than one value...
+    </p>
+    <form>
+      <label for="ben">Reason why Katie loves Ben:</label><br />
+      <br />
+      <select id="ben" name="ben" multiple>
+        <option value="pjs">Great PJ's</option>
+        <option value="cooking">Fantastic cooking</option>
+        <option value="kisses">He gives me kisses</option>
+        <option value="guitar">Rather good at the guitar</option>
+        <option value="tea">Very good at making me cups of tea</option>
+        <option value="whistling">He whistles jolly tunes</option>
+        <option value="dinosaur">
+          He pretends to be a dinosaur with me</option
+        > </select
+      ><br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p style="color:rgb(70, 117, 187)">
+      Hold down the Ctrl (windows) / Command (Mac) button to select multiple
+      options.
+    </p>
+    <br />
+
+    <!--The Opt-Group Element-->
+    <h2>The Optgroup Element</h2>
+    <p>The optgroup element creates a grouping of options within a select element.</p>
+    <form>
+      <label for="flower-select">Choose a flower:</label></br></br>
+      <select id="flower-select">
+          <optgroup label="Roses">
+              <option>Sweet Briar</option>
+              <option>Golden Celebration</option>
+              <option>Rosa 'Eden'</option>
+          </optgroup>
+          <optgroup label="Tulips">
+              <option>Garden Tulip</option>
+              <option>Parrot Tulip</option>
+              <option>Wild Tulip</option>
+          </optgroup>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </br>
+
+  <!--The DataList Element-->
+  <h2>The Datalist Element</h2>
+  <p>
+    The datalist element specifies a list of pre-defined options for an input
+    element. Unlike the select element, you can also type in the box to select an availale option.
+  </p>
+  <p style="color:black; font-size: 15px;">Where will Katie & Ben go for their next holiday?</p>
+  <form>
+    <input list="countries" name="countries" />
+    <datalist id="countries">
+      <option value="Italy"></option>
+      <option value="Spain"></option>
+      <option value="Iceland"></option>
+      <option value="USA"></option>
+      <option value="France"></option>
+      <option value="Interstellar Space"></option></datalist
+    ><br />
+    <br />
+    <input type="submit" />
+  </form>
+  <br />
+
+    <!--The Text-Area Element-->
+    <h2>The Text-Area Element</h2>
+    <p>The textarea input defines a multi-line, plain-text input field, useful when you want to allow users to enter a sizeable amount of free-form text (eg. a comment or review form).</p>
+    <form>
+      <textarea name="message" rows="10" cols="60">
+Write down all your favourite things about big hair here...</textarea
+      >
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <h3>Useful Attributes</h3>
+    <p style="color:rgb(70, 117, 187)">The rows and cols attributes allow you to specify an exact size for the textarea to take.You can also define the size of the text area using CSS.</p>
+    <p style="color:rgb(70, 117, 187)">Maxlength and minlength specify a maximum / miniumum number of characters that the textarea is allowed to contain. </p>
+    <p style="color:rgb(70, 117, 187)">Wrap specifies the wrapping behavior of the text when it reaches the edge of the textarea</p>
+    <p style="color:rgb(70, 117, 187)">Other attributes include autocapitalize, autocomplete, placeholder, required and spellcheck</p>
+    <br />
+
+    <!--The Button Element-->
+    <h2>The Button Element</h2>
+    <p>The button element represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality. </p>
+    <button type="button" class="button">Click me!</button>
+  </br></br>
+    <h3>Things To Note</h3>
+    <p style="color:rgb(70, 117, 187)">Button elements are much easier to style than input elements. By default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change a buttons appearance with CSS.</p>
+    <p style="color:rgb(70, 117, 187)">You can add inner HTML content and use pseudo-elements to the button element.</p>
+    <p style="color:rgb(70, 117, 187)">For a list of button element attributes click <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">here</a>.</p>
+  </br>
+
+
+    <!--The Fieldset & Legend Elements-->
+    <h2>The Fieldset & Legend Elements</h2>
+    <p>The fieldset element is used to group several controls as well as labels within a web form.</p>
+    <p>The legend element defines a caption for it's parent - the fieldset element.</p>
+</br>
+    <form>
+      <fieldset>
+        <legend>Tell us about yourself...</legend>
+        <label for="firstname">First name:</label><br />
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          value="Katie"
+        /><br />
+        <label for="lastname">Last name:</label><br />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          value="Bighair"
+        /><br />
+        <label for="work">Place of work:</label><br />
+        <input type="text" id="work" name="work" value="BotCorn Mansion" />
+        <br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </br>
+    <h3>Attributes</h3>
+    <p style="color:rgb(70, 117, 187)">The fieldset element takes few attribues: disabled, form and name.</p>
+    <br />
+
+    <!--The Progress Element-->
+    <h2>The Progress Element</h2>
+    <p>The progress element displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</p>
+    <form>
+      <label for="file">File progress:</label> 
+      <progress id="file" max="100" value="65">65%</progress>
+    </form>
+  </br>
+        
+    <!--The Output Element-->
+    <h2>The Output Element</h2>
+    <p>The output element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action.</p>
+    <form
+      action="/action_page.php"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+      <br /><br />
+      <input type="submit" />
+    </form>
+  </br>
+  
+  <!--The Label Element-->
+  <h2>The Label Element</h2>
+  <p>The label element represents a caption for an item in a user interface.</p>
+</br>
+
+<!--The Option Element-->
+<h2>The Option Element</h2>
+<p>The option element is used to define an item contained in a select, an optgroup, or a datalist element. As such, option can represent menu items in popups and other lists of items in an HTML document.</p>
+</br>
+
+<!--The Meter Element-->
+<h2>The Meter Element</h2>
+<p>The meter element represents either a scalar value within a known range or a fractional value.</p>
+</br>
+  </body>
+  </body>
+</html>
