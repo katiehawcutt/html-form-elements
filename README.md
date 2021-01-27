@@ -29,4 +29,4 @@ No prerequisites
 
 ## Usage
 
-View the webpage
+View the webpage! The form data is not saved anywhere. It was purely an exercise in how to implement different types of HTML form elements.
